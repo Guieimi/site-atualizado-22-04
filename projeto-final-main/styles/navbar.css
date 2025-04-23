@@ -1,0 +1,159 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: #fff9ea;
+    justify-content: space-between; /* Ajustado para ter mais controle sobre a distribuição */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid #ffe092;
+    padding: 0 20px; /* Adiciona espaçamento nas laterais */
+}
+
+.logo {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.buscador {
+    flex-basis: 50%;
+    text-align: center;
+    padding-left: 20px;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#buscadorInput {
+    padding: 8px;
+    border: none;
+    background-color: transparent;
+    width: 90%; /* Garante que a barra de busca seja responsiva */
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+input {
+    color: black;
+}
+
+.buscador label {
+    height: 20px;
+}
+
+.menu {
+    flex-basis: 30%;
+    text-align: right;
+    padding-right: 20px; /* Ajusta o padding para telas menores */
+}
+
+.menu a {
+    padding: 0 20px; /* Menos padding nas laterais para otimizar o espaço */
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f8d477; /* Cor ao passar o mouse */
+}
+
+.segundoMenu {
+    padding-bottom: 15px;
+    margin-top: 93px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    background-color: #fff9ea;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 2px solid #ffe092;
+    justify-content: center; /* Centraliza os links do segundo menu */
+}
+
+.segundoMenu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.segundoMenu a:hover {
+    background-color: #f8d477; /* Efeito de hover */
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 0 15px; /* Reduz o padding para telas menores */
+    }
+    
+    .logo {
+        flex-basis: 25%;
+    }
+
+    .buscador {
+        flex-basis: 45%; /* Ajusta o tamanho da barra de busca */
+    }
+
+    .menu {
+        flex-basis: 30%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Permite que o navbar se ajuste em dispositivos menores */
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .buscador {
+        width: 80%; /* Ajusta a largura do buscador */
+    }
+
+    .menu {
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    .menu a {
+        padding: 10px;
+        font-size: 18px;
+        display: block;
+        width: 100%; /* Torna os itens do menu responsivos */
+    }
+    
+    .segundoMenu {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5px;
+    }
+
+    .segundoMenu a {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #buscadorInput {
+        width: 100%; /* Aumenta o tamanho da barra de busca em telas pequenas */
+    }
+}

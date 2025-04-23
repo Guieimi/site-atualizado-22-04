@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Administrativo</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+
+<body>
+    <!-- Sidebar (Menu lateral) -->
+    <div id="sidebar">
+        <h2>Administração</h2>
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#pedidos">Pedidos</a></li>
+            <li><a href="#usuarios">Usuários</a></li>
+            <li><a href="#relatorios">Relatórios</a></li>
+            <li><a href="#configuracoes">Configurações</a></li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div id="main-content">
+        <h1>Bem-vindo ao painel de administração</h1>
+
+        <div id="dashboard">
+            <h2>Visão Geral</h2>
+            <div class="card">
+                <h3>Total de Pedidos</h3>
+                <p id="total-pedidos">Carregando...</p>
+            </div>
+            <div class="card">
+                <h3>Total de Usuários</h3>
+                <p id="total-usuarios">Carregando...</p>
+            </div>
+            <div class="card">
+                <h3>Total de Vendas</h3>
+                <p id="total-vendas">Carregando...</p>
+            </div>
+        </div>
+
+        <div id="pedidos">
+            <h2>Últimos Pedidos</h2>
+            <table id="tabela-pedidos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cliente</th>
+                        <th>Status</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os pedidos serão carregados aqui -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="usuarios">
+            <h2>Usuários Registrados</h2>
+            <table id="tabela-usuarios">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Os usuários serão carregados aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="javascript/admin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Story Polaroid - Personalize suas memórias com produtos exclusivos como calendários, chaveiros e cubos giratórios.">
+    <meta name="keywords" content="personalização, calendários, polaroids, chaveiros, cubos giratórios">
+    <meta name="robots" content="index, follow">
+    <title>Story - Produtos Personalizados</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/outro.css">
+    <link rel="stylesheet" href="styles/car.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <img src="images/logoo.png" alt="Logotipo Story" id="nav_logo1">
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Como Funciona?</a>
+                </li>
+            </ul>
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div id="cart-icon" style="position: relative;">
+                <i class="fa-solid fa-cart-shopping" style="font-size: 24px; cursor: pointer;"></i>
+                <span id="cart-count" style="position: absolute; top: -10px; right: -10px; background-color: red; color: white; border-radius: 50%; padding: 5px 10px; font-size: 12px; display: none;">0</span>
+            </div>
+            <div id="cart" style="display:none;">
+                <div id="cart-content">
+                    <ul id="cart-items">
+                    </ul>
+                    <div id="cart-total">
+                        Total: R$0.00
+                    </div>
+                    <button onclick="checkout()">Finalizar Compra</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="todosfiltros">
+            <div class="filtro">
+                <div class="categorias">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="Calendario.html">Calendário</a></li>
+                        <li><a href="chaveiro.html">Chaveiro</a></li>
+                        <li><a href="cubogiratorio.html">Cubo Giratório</a></li>
+                        <li><a href="Flordecetim.html">Girassol de Cetim</a></li>
+                        <li><a href="polaroid.html">Polaroids</a></li>
+                        <li><a href="quadro.html">Quadro Polaroid</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu">
+            <h2 class="section-title">Catálogo</h2>
+            <h3 class="section-subtitle">Cubo Giratório</h3>
+
+            <div id="dishhes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/CuboGiratorio.jfif" class="dish-image" alt="Cubo Giratório 1 Unidade">
+                    <h3 class="dish-title">1 Unidade</h3>
+                    <span class="dish-description">Exiba suas memórias no cubo giratório de fotos! ✨📸</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$45,50</h4>
+                        <button class="btn-default" data-name="Cubo Giratório 1 Unidade" data-price="45.50">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/CuboGiratorio.jfif" class="dish-image" alt="Cubo Giratório 2 Unidades">
+                    <h3 class="dish-title">2 Unidades</h3>
+                    <span class="dish-description">Mostre momentos únicos no nosso cubo giratório! ✨📸</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$100,00</h4>
+                        <button class="btn-default" data-name="Cubo Giratório 2 Unidades" data-price="100.00">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/CuboGiratorio.jfif" class="dish-image" alt="Cubo Giratório 3 Unidades">
+                    <h3 class="dish-title">3 Unidades</h3>
+                    <span class="dish-description">Cubo giratório de 6 fotos: revele suas memórias! ✨📸</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$136,50</h4>
+                        <button class="btn-default" data-name="Cubo Giratório 3 Unidades" data-price="136.50">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="images/CuboGiratorio.jfif" class="dish-image" alt="Cubo Giratório 4 Unidades">
+                    <h3 class="dish-title">4 Unidades</h3>
+                    <span class="dish-description">Gire e veja seus momentos favoritos em qualquer ângulo! ✨📸</span>
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                    <div class="dish-price">
+                        <h4>R$182,50</h4>
+                        <button class="btn-default" data-name="Cubo Giratório 4 Unidades" data-price="182.50">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>                
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2 class="section-title">Como Funciona?</h2>
+            <h3 class="section-subtitle">O processo de produção do seu pedido</h3>
+
+            <div id="feedbacks">
+                <div class="feedback">
+                    <img src="images/numero 1.png" class="feedback-avatar" alt="Passo 1">
+                    <div class="feedback-content">
+                        <p>Passo 1
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>Entre em contato via WhatsApp e nos informe quais produtos têm interesses, quantidades, etc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="images/numero 2.png" class="feedback-avatar" alt="Passo 2">
+                    <div class="feedback-content">
+                        <p>Passo 2
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Após confirmar o pedido, o atendente entrará em contato para informar a forma de envio das
+                            fotos para produção.
+                            Em seguida, o atendente enviará o resultado para sua aprovação.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="images/numero 3.png" class="feedback-avatar" alt="Passo 3">
+                    <div class="feedback-content">
+                        <p>Passo 3
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Após a aprovação, o atendente apresentará as opções de pagamento. Com a confirmação do
+                            pagamento, a produção do seu pedido será iniciada.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feedback">
+                    <img src="images/numero 4.png" class="feedback-avatar" alt="Passo 4">
+                    <div class="feedback-content">
+                        <p>Passo 4
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            Quando a produção for concluída, enviaremos fotos e vídeos do produto, coletaremos seu
+                            endereço e despacharemos via correio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-info">Para mais informações, entre em contato!</button>
+        </section>
+    </main>
+
+    <footer class="final">
+        <img src="images/wave.svg" alt="Decoração de onda">
+        <div id="footer_items">
+            <span id="copyright">© Guilherme Ribeiro</span>
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5511958769066">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/_story.polaroid">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/BtENd2USeqZDWsRq/?mibextid=LQQJ4d">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+    <script src="javascript/car.js"></script>
+</body>
+
+</html>

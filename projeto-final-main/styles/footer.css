@@ -1,0 +1,35 @@
+footer {
+    background-color: var(--color-primary-2);
+    padding-top: 0px;
+    /* Reduzir o padding superior */
+    padding-bottom: 10px;
+    /* Reduzir o padding inferior */
+}
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8% 10px 8%;
+    /* Reduzir o padding inferior */
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#copyright {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 5% 24px 5%;
+        /* Ajustando o padding para telas menores */
+    }
+
+    #copyright {
+        text-align: center;
+        /* Alinhando o texto ao centro no mobile */
+    }
+}

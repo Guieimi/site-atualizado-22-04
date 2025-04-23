@@ -1,0 +1,28 @@
+footer2 {
+    background-color: var(--color-primary-2);
+    padding: 24px 0;
+}
+
+#root_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8% 24px 8%;
+    align-items: center;
+}
+
+#copyright2 {
+    color: var(--color-neutral-1);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #root_items {
+        flex-direction: column;
+        gap: 20px; /* Aumentando o espaço entre os itens em dispositivos móveis */
+        padding: 0px 5%; /* Ajustando o espaçamento nas laterais */
+    }
+    
+    #copyright2 {
+        text-align: center; /* Centralizando o copyright no celular */
+    }
+}

@@ -1,0 +1,152 @@
+.categorias {
+    padding-top: 50px;
+}
+
+.categorias ul li.active a {
+    color: #e9a209;
+    /* Cor destacada */
+    font-weight: bold;
+    /* Peso de fonte para realçar */
+    border-bottom: 2px solid #e9a209;
+    /* Linha embaixo para destacar */
+}
+
+.categorias ul {
+    padding-top: 20px;
+}
+
+.filtro a,
+.categorias a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    /* Animação suave ao passar o mouse */
+}
+
+.filtro a:hover,
+.categorias a:hover {
+    color: #e9a209;
+    /* Cor ao passar o mouse nas categorias */
+}
+
+.categorias ul li,
+.filtroborda ul li {
+    list-style: none;
+    color: black;
+    padding-bottom: 10px;
+    transition: transform 0.3s, color 0.3s;
+    /* Animação ao passar o mouse */
+}
+
+.categorias ul li:hover,
+.filtroborda ul li:hover {
+    color: #e9a209;
+    /* Mudança de cor ao passar o mouse */
+    transform: translateX(5px);
+    /* Leve deslocamento para a direita ao passar o mouse */
+}
+
+.todosfiltros {
+    padding-right: 150px;
+    float: left;
+    display: flex;
+    position: static;
+}
+
+/* Ajustes no menu */
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishhes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 12px;
+    width: 30%;
+    /* Ajustei a largura para 30%, permitindo 3 por linha */
+    padding: 15px;
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.dish img {
+    max-width: 60%;
+    /* Mantive o tamanho aumentado das imagens */
+    height: auto;
+    object-fit: cover;
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: var(--color-primary-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-description {
+    color: #434343;
+    text-align: center;
+}
+
+.dish-rate i {
+    color: var(--color-primary-6);
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1590px) {
+    #dishhes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(33.33% - 16px);
+        /* Ajustei para garantir 3 por linha */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+        /* Para telas menores, cada item ocupa 100% da largura */
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+
+    .todosfiltros {
+        padding-right: 20px;
+        /* Ajuste para melhor encaixe em telas menores */
+    }
+}

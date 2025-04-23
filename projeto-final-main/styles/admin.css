@@ -1,0 +1,106 @@
+/* Estilos para o Sidebar */
+#sidebar {
+    position: fixed;
+    width: 220px;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar h2 {
+    text-align: center;
+    font-size: 24px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 15px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#sidebar ul li a:hover {
+    background-color: #f4a500;
+}
+
+/* Estilos para o Conteúdo Principal */
+#main-content {
+    margin-left: 240px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+#tabela-pedidos, #tabela-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#tabela-pedidos th, #tabela-usuarios th,
+#tabela-pedidos td, #tabela-usuarios td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela-pedidos th, #tabela-usuarios th {
+    background-color: #f1f1f1;
+}
+
+#tabela-pedidos td, #tabela-usuarios td {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Botões */
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

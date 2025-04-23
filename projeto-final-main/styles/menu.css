@@ -1,0 +1,100 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#dishes {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    flex-wrap: wrap; /* Garante que os itens se ajustem conforme o espaço */
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    width: 25%;
+    padding: 20px;
+    background-color: var(--color-neutral-0);
+    box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.1); /* Reduzido o box-shadow para uma aparência mais suave */
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out; /* Adicionando transição suave */
+}
+
+.dish:hover {
+    box-shadow: 0px 0px 15px 4px rgba(0, 0, 0, 0.2); /* Efeito de hover mais visível */
+}
+
+.dish img {
+    width: 100%; /* Imagem ocupa 100% da largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+}
+
+.dish-heart {
+    position: absolute;
+    background-color: var(--color-primary-6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.563rem;
+    color: var(--color-primary-1);
+    width: 70px;
+    height: 70px;
+    right: -10px;
+    top: -10px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+
+.dish-description {
+    color: #434343;
+    text-align: center;
+}
+
+.dish-rate i {
+    color: var(--color-primary-6);
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1590px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px); /* Ajusta a largura das "dishes" para caber em duas colunas */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%; /* Para dispositivos móveis, cada "dish" ocupa a largura total */
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+
+    .dish-heart {
+        font-size: 1.2rem; /* Reduz o tamanho do ícone no "heart" em telas menores */
+    }
+
+    .dish img {
+        max-height: 200px; /* Limita a altura da imagem em dispositivos móveis para evitar sobrecarga visual */
+    }
+}
