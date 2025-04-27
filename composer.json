@@ -1,0 +1,7 @@
+{
+    "name": "seunome/loja-polaroid",
+    "description": "Projeto Loja Polaroid",
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    }
+}
